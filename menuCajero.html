@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cajero</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styleCajero.css">
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage"> Cajero </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#cliente">Nuevo Cliente</a></li>
+        <li><a href="#asistencia">Tomar Asistencia</a></li>
+        <li><a href="#newpf">Nuevo funcionario</a></li>
+        <li><a href="http://www.gymcenter.cl/" target="_blank">GymCenter</a></li>
+        <li><a href="logout.php">Salir</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>GymCenter</h1>
+</div>
+
+<!-- Container (new perfil Section) -->
+<div id="perfil" class="container-fluid">
+<br><br><br>
+
+  <div class="container-fluid bg-grey text-center">
+    <br><br><br>
+    <h2>Bienvenido Cajero</h2>
+    <h4>Información sobre el cajero actual</h4>
+    <br><br>
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hovered">
+          <thead>
+            <tr>
+              <td>Rut:</td>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>Correo</td>
+              <td>Telefono</td>
+              <td>Fecha de Contrato</td>
+              <td>Cargo</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>11222333-4</td>
+              <td>Roberto</td>
+              <td>Robertini</td>
+              <td>r.robertini@gymcenter.cl</td>
+              <td>987654321</td>
+              <td>2010-03-23</td>
+              <td>Cajero</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Container (Client Section) -->
+<div id="cliente" class="container-fluid text-center">
+  <h2>Registro de nuevo Cliente</h2>
+  <h4>Formulario para ingresar nuevo cliente</h4>
+  <div class="row slideanim">
+    <div class="container">
+      <form action="ingresarCliente.php" method="POST" class="form">
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">RUT  :  </label></div>
+          <div class="col-md-3"><input type="text" name="rut" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Nombre   :  </label></div>
+          <div class="col-md-3"><input type="text" name="nombre" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">Apellido  :  </label></div>
+          <div class="col-md-3"><input type="text" name="apellido" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Correo Electrónico   :  </label></div>
+          <div class="col-md-3"><input type="text" name="email" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Telefono   :  </label></div>
+          <div class="col-md-3"><input type="text" name="telefono" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">Fecha de Nacimiento  :  </label></div>
+          <div class="col-md-3">
+            <input type="text" name="fechanac" class="form-control">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Sexo   :  </label></div>
+          <div class="col-md-3">
+            <select name="sexo" class="btn btn-default btn-lg dropdown-toggle">
+              <option value="f">    Femenino    </option>
+              <option value="m">    Masculino    </option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">Estatura  :  </label></div>
+          <div class="col-md-3"><input type="text" name="estatura" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Peso   :  </label></div>
+          <div class="col-md-3"><input type="text" name="peso" class="form-control"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-9"></div>
+          <div class="col-md-3"><input type="submit" value="Ingresar nuevo cliente" class="btn btn-success btn-lg"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <br><br>
+  <!-- Container (Portfolio Section) -->
+<div id="asistencia" class="container-fluid text-center bg-grey">
+    <h2>Sección de Asistencia</h2>
+    <h4></h4>
+    <form action="" class="form">
+       <div class="row">
+          <div class="col-md-3"><label for="for rut">Cliente  :  </label></div>
+          <div class="col-md-3">
+            <select name="rut" id="" class="btn btn-default btn-lg">
+              <option value="12345678-9">Fernanda Fernandez</option>
+              <option value="98764321-3">Alam Brito</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Fecha  :  </label></div>
+          <div class="col-md-3"><input type="text" name="nombre" class="form-control" placeholder="AAAA-MM-DD"></div>
+        </div>
+        <br><br>
+        <input type="submit" class="btn btn-success btn-lg" value="Ingresar Asistecia">
+    </form>
+</div>
+
+<!-- Container (Funcionario Section) -->
+<div id="newpf" class="container-fluid">
+  <div class="text-center">
+    <h2>Nuevo funcionario</h2>
+    <h4>Formulario para ingresar a un nuevo funcionario del Gimnasio</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="container">
+      <form action="#" method="POST" class="form">
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">RUT  :  </label></div>
+          <div class="col-md-3"><input type="text" name="rut" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Nzombre   :  </label></div>
+          <div class="col-md-3"><input type="text" name="nombre" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">Apellido  :  </label></div>
+          <div class="col-md-3"><input type="text" name="apellido" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Correo Electrónico   :  </label></div>
+          <div class="col-md-3"><input type="text" name="email" class="form-control"></div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">Fecha de Contrato  :  </label></div>
+          <div class="col-md-3">
+            <input type="text" name="fechanac" class="form-control">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for pass">Cargo   :  </label></div>
+          <div class="col-md-3">
+            <select name="cargo" class="btn btn-default btn-lg dropdown-toggle">
+              <option value="1">    Cajero    </option>
+              <option value="2">    Preparador Físico    </option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">Contraseña  :  </label></div>
+          <div class="col-md-3"><input type="text" name="contraseña" class="form-control"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-9"></div>
+          <div class="col-md-3"><input type="submit" value="Ingresar nuevo cliente" class="btn btn-success btn-lg"></div>
+        </div>
+      </form>
+    </div>
+
+
+  </div>
+</div>
+
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Sistema de Información para la Gestión de cliente de GymCenter</p>
+  <p>Facultad de Ingeniería y Ciencias</p>
+  <p>Departamento de Ciencias de la Comṕutación e Informática</p>
+  <p>Sistemas de Información</p>
+  <p>Desarrollado por :</p>
+  <p>Karen Coronado (Jefe de Proyecto), Pedro Manríquez (Analista), Sergio Suarez (Desarrollador)</p>
+
+
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+
+</body>
+</html>

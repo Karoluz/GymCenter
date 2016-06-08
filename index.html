@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ingreso</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styleCajero.css">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#myPage"> Sistema de Información para la gestión de clientes en GymCenter </a>
+        </div>
+      </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <div class="container" id ="contenedor">
+      <div class="jumbotron">
+        <div class="row"><legend><h2 class="log">Login</h2></legend></div>
+        <br>
+        <form action="login.php" method="POST" class="form">
+            <div class="row">
+              <div class="col-md-3"><label  class="log" for="for rut">RUT  :  </label></div>
+              <div class="col-md-3"><input type="text" name="in-rut" class="form-control"></div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-3"><label class="log" for="for pass">Contraseña   :  </label></div>
+              <div class="col-md-3"><input type="password" name="in-pass" class="form-control"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-9"></div>
+              <div class="col-md-3"><input type="submit" value="Autentificarse" class="btn btn-default btn-lg"></div>
+            </div>
+        </form>
+      </div>
+    </div>
+    
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>Sistema de Información para la Gestión de cliente de GymCenter</p>
+        <p>Facultad de Ingeniería y Ciencias</p>
+        <p>Departamento de Ciencias de la Comṕutación e Informática</p>
+        <p>Sistemas de Información</p>
+        <p>Desarrollado por :</p>
+        <p>Karen Coronado (Jefe de Proyecto), Pedro Manríquez (Analista), Sergio Suarez (Desarrollador)</p>
+    </footer>
+</body>
+</html>

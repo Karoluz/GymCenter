@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PreparadorFisico</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/styleCajero.css">
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage"> Preparador Físico </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#rutina">Rutinas</a></li>
+        <li><a href="#group">Crear Grupos</a></li>
+        <li><a href="#avance">Avance Cliente</a></li>
+        <li><a href="logout.php">Salir</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>GymCenter</h1>
+</div>
+<br><br><br>
+<!-- Container (new perfil Section) -->
+<div id="perfil" class="container-fluid">
+  <br><br><br>
+<div class="container-fluid bg-grey text-center">
+    <h2>Bienvenido Preparador Físico</h2>
+    <h4>Información sobre el Entrenador actual</h4>
+    <br><br>
+    <div class="row">
+      <div class="table-responsive">
+        <table class="table table-bordered table-hovered">
+          <thead>
+            <tr>
+              <td>Rut:</td>
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>Correo</td>
+              <td>Telefono</td>
+              <td>Fecha de Contrato</td>
+              <td>Cargo</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17123123-4</td>
+              <td>Mariana</td>
+              <td>Marino</td>
+              <td>m.marino@gymcenter.cl</td>
+              <td>986745624</td>
+              <td>2012-03-21</td>
+              <td>Entrenador</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<br> <br><br><br>
+<!-- Container (Client Section) -->
+<div id="rutina" class="container-fluid text-center">
+  <br><br>
+  <h2>Administración de rutinas</h2>
+  <h4>Seleccione que opción desea operar en la administración de rutinas</h4>
+  <br><br><br><br>
+  <div class="row slideanim">
+    <div class="container">
+     <div class="row">
+       <div class="col-md-3"><a href="#" class="btn btn-success btn-lg">Planificar</a></div>
+       <div class="col-md-3"><a href="#" class="btn btn-success btn-lg">Registrar</a></div>
+       <div class="col-md-3"><a href="#" class="btn btn-success btn-lg">Registrar Ejercicios</a></div>
+       <div class="col-md-3"><a href="#" class="btn btn-success btn-lg">Ver Grupos</a></div>
+     </div>
+    </div>
+  </div>
+  </div>
+  <br><br><br><br>
+  <!-- Container (Portfolio Section) -->
+<div id="group" class="container-fluid text-center bg-grey">
+  <h2>Crear Grupos de Clientes</h2>
+  <h4>Seleccione los clientes para crear un nuevo grupo.</h4><br><br>
+  <div class="row text-center slideanim">
+    <form class="form" action="">
+        <div class="row">
+          <div class="col-md-3"><label for="for rut">Nombre del Grupo  :  </label></div>
+          <div class="col-md-3"><input type="text" name="rut" class="form-control" placeholder="Nombre del Grupo"></div>
+        </div>
+        <br><br>
+         <div class="row">
+          <div class="col-md-3"><label for="for rut">Seleccionar Integrantes  :  </label></div>
+          <div class="col-md-3" class="form-control">
+              <select name="genteGroup" multiple="multiple" id="">
+                <option value="12321331-2">Fernanda Fernandez</option>
+                <option value="12312331-3">Alam Brito</option>
+              </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-3"></div>
+          <div class="col-md-3"><input type="submit" class="btn btn-success btn-lg" value="Crear Grupo"></div>
+          
+        </div>
+    </form>
+  </div><br>
+</div>
+<br><br>
+
+<div id="avance" class="container-fluid text-center">
+  <br><br>
+  <h2>Ver Avance de Clientes.</h2>
+  <h4>Para ver avance de cliente favor selecionar el cliente</h4>
+  <br><br><br>
+  <div class="row slideanim">
+    <div class="container">
+      <form action="#" method="POST" class="form">
+         <div class="row">
+            <div class="col-md-3"><label for="for rut">Cliente  :  </label></div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+              <select name="rut" id="" class="btn btn-default btn-lg">
+                <option value="12345678-9">Fernanda Fernandez</option>
+                <option value="98764321-3">Alam Brito</option>
+              </select>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-3"><input type="submit" class="btn btn-success btn-lg" value="Ver Avance">
+            </div>
+        </div>
+        <br><br>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<br><br>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Sistema de Información para la Gestión de cliente de GymCenter</p>
+  <p>Facultad de Ingeniería y Ciencias</p>
+  <p>Departamento de Ciencias de la Comṕutación e Informática</p>
+  <p>Sistemas de Información</p>
+  <p>Desarrollado por :</p>
+  <p>Karen Coronado (Jefe de Proyecto), Pedro Manríquez (Analista), Sergio Suarez (Desarrollador)</p>
+
+
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+
+</body>
+</html>

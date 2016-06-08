@@ -1,0 +1,15 @@
+									GymCenter SIA.
+	
+El siguiente archivo de texto dará los pasos para la instalación del Sistema de GymCenter SIA
+
+1.-	ir al administrador de base de datos "localhost/phpmyadmin/".
+2).- Crear una base de datos llamada "gimnasio" con "cotejamiento utf8_spanish_ci".
+3).- Importar el dumb de la base de datos llamado "gimnasio.sql".
+
+4).- Copiar la carpeta Gymcenter dentro htdocs de nuestro cliente ya sea XAMPP o WAMPP.
+
+Usuarios para Login:
+
+RUT							PASS 								Función en el SIA
+11222333-4						123 							Cajero
+17123123-4						234 							Preparador Fisico
